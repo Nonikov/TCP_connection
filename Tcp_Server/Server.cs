@@ -18,7 +18,7 @@ namespace Tcp_Server
 
             public void StartSocket()
             {
-                socketSrv.Bind(new IPEndPoint(IPAddress.Any, 50));
+                socketSrv.Bind(new IPEndPoint(IPAddress.Any, 50));//связываем сокет с локальной точкой, по которой будем принимать данные
                 socketSrv.Listen(5);
 
                 while (true)
